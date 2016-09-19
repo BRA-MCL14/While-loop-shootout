@@ -1,0 +1,21 @@
+killValue = ("y")
+
+while killValue == "y" :
+    total = (float(input("Enter your meal total: $")))
+
+    tip = (float(total * 0.18))
+    tax = (float(total * 0.07))
+    grandTotal = total + tip + tax
+
+    tip = (format(tip,'.2f'))
+    tax = (format(tax,'.2f'))
+    grandTotal = (format(grandTotal,'.2f'))
+
+    print("\nYour tip amount is $", tip)
+    print("Your tax amount is $", tax)
+    
+    print("\nYour grand total is $",grandTotal)
+
+    killValue = (str(input("\nWould you like to run the program again? [Y|N]\n")))
+    
+quit()
